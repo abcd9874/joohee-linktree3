@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>JooHee Park</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #e87a3e 0%, #c25a2e 25%, #6b4030 55%, #2e2a2a 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+    color: #fff;
+  }
+  .container {
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+  }
+  .profile-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 0 auto 16px;
+    background: linear-gradient(135deg, #ffb347, #ff7b3d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    border: 3px solid rgba(255,255,255,0.3);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    overflow: hidden;
+  }
+  .profile-img img { width: 100%; height: 100%; object-fit: cover; }
+  .name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .bio {
+    font-size: 14px;
+    opacity: 0.85;
+    margin-bottom: 32px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+  .link-btn {
+    display: block;
+    background: #fff;
+    color: #222;
+    text-decoration: none;
+    padding: 16px 20px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  }
+  .link-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  }
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 8px;
+  }
+  .socials a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(255,255,255,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: background 0.2s ease;
+  }
+  .socials a:hover { background: rgba(255,255,255,0.15); }
+  .socials svg { width: 18px; height: 18px; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile-img">
+      <img src="avatar.png" alt="JooHee Park" onerror="this.style.display='none';this.parentNode.innerText='JH';" />
+    </div>
+    <div class="name">JooHee Park</div>
+    <div class="bio">Student</div>
+
+    <div class="links">
+      <a class="link-btn" href="https://www.instagram.com/abcd9874_/" target="_blank" rel="noopener">Instagram</a>
+      <a class="link-btn" href="mailto:seoseoseo231abcd@gmail.com">Email</a>
+      <a class="link-btn" href="#" target="_blank" rel="noopener">Blog</a>
+      <a class="link-btn" href="#" target="_blank" rel="noopener">Portfolio</a>
+    </div>
+
+    <div class="socials">
+      <a href="mailto:seoseoseo231abcd@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+      <a href="https://www.instagram.com/abcd9874_/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <a href="#" aria-label="Link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
